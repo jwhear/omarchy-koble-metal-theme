@@ -1,0 +1,48 @@
+# Koble Metal — pressed metal and frosted glass palette
+# Dark, cool steel neutrals with mint/cyan highlights and restrained brand accents.
+mode = "dark"
+
+accent = "#8FCBB7"
+selection = "#244B50"
+muted = "#55747A"
+
+background = "#0B151D"
+dark_background = "#071018"
+darker_background = "#040A10"
+lighter_background = "#152631"
+
+foreground = "#D6E7E4"
+dark_foreground = "#78949A"
+light_foreground = "#E3F0ED"
+bright_foreground = "#F2FAF8"
+
+red = "#C97878"
+green = "#8FCBB7"
+yellow = "#D7C88B"
+blue = "#78B9C9"
+magenta = "#B8A0D9"
+cyan = "#8DDDE0"
+white = "#D6E7E4"
+black = "#0B151D"
+
+# ANSI palette
+color0 = "#0B151D"
+color1 = "#C97878"
+color2 = "#8FCBB7"
+color3 = "#D7C88B"
+color4 = "#78B9C9"
+color5 = "#B8A0D9"
+color6 = "#8DDDE0"
+color7 = "#B8CBC8"
+color8 = "#55747A"
+color9 = "#E08D8D"
+color10 = "#B0E0CD"
+color11 = "#E8DCA6"
+color12 = "#96D4E0"
+color13 = "#CCB9E8"
+color14 = "#B1F0F0"
+color15 = "#F2FAF8"
+
+# Window borders: cool steel edge shifting to mint glass.
+hyprland_active_border = "rgba(8fcbb7ee) rgba(78b7c9ee) 35deg"
+hyprland_inactive_border = "rgba(45616acc)"

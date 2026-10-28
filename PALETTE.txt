@@ -1,0 +1,11 @@
+# Koble Metal palette reference
+Steel background: #0B151D
+Deep shadow:      #040A10
+Raised surface:   #152631
+Mint accent:      #8FCBB7
+Glacier cyan:     #78B9C9
+Glass aqua:       #8DDDE0
+Muted steel:      #55747A
+Lavender:         #B8A0D9
+Rose:             #C97878
+Warm status:      #D7C88B

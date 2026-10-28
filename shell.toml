@@ -1,0 +1,68 @@
+# Koble Metal shell styling.
+# Omarchy's shell reads these tokens for the bar, launcher, popups and notifications.
+
+[bar]
+background = "#09141C"
+border = "rgba(8fcbb7aa)"
+border-width = "0 0 2 0"
+border-alpha = 0.9
+size-horizontal = 28
+scale-with-font = true
+
+[popups]
+background = "#101F29"
+border = "rgba(78b9c9bb) rgba(8fcbb7bb) 35deg"
+border-width = 1
+border-alpha = 0.9
+
+[tooltip]
+background = "#142630"
+border = "#55747A"
+border-width = 1
+border-alpha = 0.75
+
+[notifications]
+background = "#101F29"
+border = "rgba(8fcbb7ee) rgba(78b9c9ee) 35deg"
+border-width = 1
+border-alpha = 0.95
+
+[launcher]
+background = "#0B151D"
+border = "rgba(8fcbb7cc) rgba(78b9c9cc) 35deg"
+border-width = 1
+border-alpha = 0.9
+
+[menu]
+background = "#0D1A23"
+border = "rgba(85,116,122,0.9)"
+border-width = 1
+border-alpha = 0.9
+selected-color = "#8FCBB7"
+selected-border = "#8FCBB7"
+selected-border-width = "1 1 1 3"
+
+[controls]
+normal-color = "#152631"
+normal-border = "#55747A"
+normal-border-width = 1
+normal-border-alpha = 0.55
+hover-cursor-color = "#8FCBB7"
+hover-cursor-border = "#8FCBB7"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.85
+focus-color = "#8FCBB7"
+focus-border = "rgba(8fcbb7ee) rgba(78b9c9ee) 35deg"
+focus-border-width = 1
+focus-border-alpha = 0.95
+pressed-fill-alpha = 0.25
+selection-fill-alpha = 0.22
+
+[lock]
+background = "#071018"
+border = "rgba(8fcbb7cc) rgba(78b9c9cc) 35deg"
+border-width = 1
+border-alpha = 0.85
+
+[font]
+base-size = 12
