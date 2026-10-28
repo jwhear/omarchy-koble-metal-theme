@@ -27,8 +27,7 @@ bash ~/.config/omarchy/themes/koble-metal/extras/install.sh
 
 This installs:
 
-- **A `theme-set` hook** that, while Koble Metal is active, sets 1px borders, 6px rounded corners, a mint
-  glow around the focused window and frosted blur. It writes these to a Hyprland toggle file that loads after
+- **A `theme-set` hook** that, while Koble Metal is active, sets 1px borders, 6px rounded corners, and frosted blur. It writes these to a Hyprland toggle file that loads after
   `~/.config/hypr/looknfeel.lua` and removes it when you switch themes, so your own settings come back.
 - **`koble.bar-glow`**, a shell plugin that draws a glowing mint line along the bar's inner edge.
 - **`koble.workspaces`**, a shell plugin that replaces the stock workspaces widget and lights the current
