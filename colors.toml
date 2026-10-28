@@ -1,17 +1,17 @@
 # Koble Metal — pressed metal and frosted glass palette
-# Dark, cool steel neutrals with mint/cyan highlights and restrained brand accents.
+# Dark, cool steel neutrals with mint/cyan edge light and restrained accents.
 mode = "dark"
 
 accent = "#8FCBB7"
 selection = "#244B50"
 muted = "#55747A"
 
-background = "#0B151D"
+background = "#0A141B"
 dark_background = "#071018"
 darker_background = "#040A10"
-lighter_background = "#152631"
+lighter_background = "#132530"
 
-foreground = "#D6E7E4"
+foreground = "#C9DCD8"
 dark_foreground = "#78949A"
 light_foreground = "#E3F0ED"
 bright_foreground = "#F2FAF8"
@@ -22,11 +22,11 @@ yellow = "#D7C88B"
 blue = "#78B9C9"
 magenta = "#B8A0D9"
 cyan = "#8DDDE0"
-white = "#D6E7E4"
-black = "#0B151D"
+white = "#C9DCD8"
+black = "#0A141B"
 
 # ANSI palette
-color0 = "#0B151D"
+color0 = "#0A141B"
 color1 = "#C97878"
 color2 = "#8FCBB7"
 color3 = "#D7C88B"
@@ -43,6 +43,7 @@ color13 = "#CCB9E8"
 color14 = "#B1F0F0"
 color15 = "#F2FAF8"
 
-# Window borders: cool steel edge shifting to mint glass.
-hyprland_active_border = "rgba(8fcbb7ee) rgba(78b7c9ee) 35deg"
-hyprland_inactive_border = "rgba(45616acc)"
+# Window borders: dim steel edges that light up mint at opposite corners,
+# like the bevelled corner accents in the concept art.
+hyprland_active_border = "rgba(b0e0cdff) rgba(4f7a80ee) rgba(4f7a80ee) rgba(b0e0cdff) 45deg"
+hyprland_inactive_border = "rgba(23363fcc)"

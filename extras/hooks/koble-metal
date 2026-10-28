@@ -1,0 +1,69 @@
+#!/bin/bash
+# Koble Metal theme-set hook. Omarchy calls it with the new theme's slug.
+#
+# While koble-metal is active, this writes a Hyprland toggle file with the
+# theme's window look (thin borders, rounded corners, mint glow, frosted
+# blur). Omarchy loads toggle files after ~/.config/hypr/looknfeel.lua, and
+# removing the file on any other theme puts your own settings back.
+
+TOGGLE="$HOME/.local/state/omarchy/toggles/hypr/koble-metal.lua"
+
+if [[ $1 == koble-metal ]]; then
+  mkdir -p "$(dirname "$TOGGLE")"
+  NEW=$(mktemp)
+  cat >"$NEW" <<'LUA'
+-- Koble Metal window look. Written by the koble-metal theme-set hook while
+-- the theme is active and removed when another theme is set.
+hl.config({
+  general = {
+    gaps_in = 6,
+    gaps_out = 14,
+    border_size = 1,
+  },
+
+  decoration = {
+    rounding = 6,
+
+    shadow = {
+      enabled = true,
+      range = 20,
+      render_power = 3,
+      color = "rgba(02060a99)",
+      color_inactive = "rgba(02060a99)",
+    },
+
+    blur = {
+      enabled = true,
+      size = 6,
+      passes = 3,
+      noise = 0.02,
+      contrast = 0.9,
+      brightness = 0.85,
+      vibrancy = 0.15,
+      popups = true,
+    },
+  },
+})
+
+-- Frosted glass: let the blurred wallpaper show through windows that use
+-- Omarchy's default opacity (browsers and video apps opt out of that tag).
+o.window({ tag = "default-opacity" }, { opacity = "0.93 0.86" })
+
+-- Blur behind the shell's translucent surfaces: bar, menus, notifications.
+hl.layer_rule({
+  match = { namespace = "^(omarchy-bar|omarchy-menu|omarchy-notifications|omarchy-osd|omarchy-polkit|omarchy-reminders|omarchy-clipboard|omarchy-emojis|omarchy-keyboard-panel)$" },
+  blur = true,
+  blur_popups = true,
+  ignore_alpha = 0.3,
+})
+LUA
+  if cmp -s "$NEW" "$TOGGLE"; then
+    rm -f "$NEW"
+  else
+    mv "$NEW" "$TOGGLE"
+    hyprctl reload >/dev/null
+  fi
+elif [[ -f $TOGGLE ]]; then
+  rm -f "$TOGGLE"
+  hyprctl reload >/dev/null
+fi

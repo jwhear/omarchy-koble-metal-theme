@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "koble.bar-glow",
+  "name": "Koble Bar Glow",
+  "version": "1.0.0",
+  "author": "Koble Metal theme",
+  "description": "Glowing mint edge line along the inner edge of the bar while the Koble Metal theme is active",
+  "kinds": [
+    "service"
+  ],
+  "entryPoints": {
+    "service": "BarGlow.qml"
+  }
+}
